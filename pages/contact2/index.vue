@@ -1,4 +1,5 @@
 <template>
+
   
   <div>
     <UiPageHeader subject="お問い合わせ" subheading="Contact" />

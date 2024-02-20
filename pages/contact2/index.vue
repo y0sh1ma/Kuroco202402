@@ -333,7 +333,7 @@ const d = ref('');
 const loading = ref(false);
 
 const { data: response } = await useFetch(
-  `${config.public.kurocoApiDomain}/rcms-api/1/inquiry/4`,
+  `${config.public.kurocoApiDomain}/rcms-api/1/inquiry/1`,
   {
     credentials: 'include',
   }
@@ -397,7 +397,7 @@ const handleOnSubmit = async () => {
   try {
     loading.value = true;
     const response = await $fetch(
-      `${config.public.kurocoApiDomain}/rcms-api/1/inquiry/4`,
+      `${config.public.kurocoApiDomain}/rcms-api/1/inquiry/1`,
       {
         credentials: 'include',
         method: 'POST',

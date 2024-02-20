@@ -1,9 +1,6 @@
 <template>
-
-  
   <div>
     <UiPageHeader subject="お問い合わせ" subheading="Contact" />
-
     <section>
       <div class="l-container--small l-container--contents">
         <template v-if="submitted">
@@ -336,7 +333,7 @@ const d = ref('');
 const loading = ref(false);
 
 const { data: response } = await useFetch(
-  `${config.public.kurocoApiDomain}/rcms-api/1/inquiry/1`,
+  `${config.public.kurocoApiDomain}/rcms-api/1/inquiry/4`,
   {
     credentials: 'include',
   }
@@ -400,7 +397,7 @@ const handleOnSubmit = async () => {
   try {
     loading.value = true;
     const response = await $fetch(
-      `${config.public.kurocoApiDomain}/rcms-api/1/inquiry/1`,
+      `${config.public.kurocoApiDomain}/rcms-api/1/inquiry/4`,
       {
         credentials: 'include',
         method: 'POST',

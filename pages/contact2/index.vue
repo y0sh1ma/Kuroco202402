@@ -77,11 +77,11 @@
 </template>
 
 <script>
-const FORM_ID = 3; // 作成したフォーム定義のID
+const FORM_ID = 4; // 作成したフォーム定義のID
 
 export default {
   async asyncData({ $axios }) {
-    const response = await $axios.$get(`/rcms-api/8/form/4`);
+    const response = await $axios.$get(`/rcms-api/8/form/${FORM_ID}`);
     return {
       name: response.details.inquiry_name,
       info: response.details.inquiry_info,

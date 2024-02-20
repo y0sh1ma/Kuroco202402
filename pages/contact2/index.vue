@@ -1,11 +1,11 @@
 <template>
   <div>
-    <UiPageHeader subject="お問い合わせ" subheading="Contact" />
+    <UiPageHeader subject="申込" subheading="Contact" />
     <section>
       <div class="l-container--small l-container--contents">
         <template v-if="submitted">
           <p class="c-text--pre" v-html="thanksText" />
-          <NuxtLink to="/" class="c-button">トップページ</NuxtLink>
+          <NuxtLink to="/" class="c-button">申込ページ</NuxtLink>
         </template>
         <template v-else>
           <div class="c-form-group">

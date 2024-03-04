@@ -306,6 +306,7 @@ const { data: news } = await useFetch(
   `${config.public.kurocoApiDomain}/rcms-api/1/news/list`,
   {
     credentials: 'include',
+    server: false,
   }
 );
 const { data: ltdNews } = await useFetch(

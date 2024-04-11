@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   // ssr: true,
   runtimeConfig: {
     public: {
-      kurocoApiDomain: 'https://diverta-oshima-corp.g.kuroco.app',
+      kurocoApiDomain: 'https://a_diverta-oshima-corp.g.kuroco.app',
     },
   },
   app: {
